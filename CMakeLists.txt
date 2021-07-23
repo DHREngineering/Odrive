@@ -10,8 +10,8 @@ find_path(Jsoncpp_INCLUDE_DIR
   PATH_SUFFIXES jsoncpp
   PATHS ${Jsoncpp_PKGCONF_INCLUDE_DIRS} # /usr/include/jsoncpp/json
 )
-
-add_executable(odrive main.cpp odrive.cpp)
+include_directories(include/odrive)
+add_executable(odrive main.cpp src/odrive.cpp)
 target_link_libraries(odrive usb-1.0 jsoncpp)
 
 
