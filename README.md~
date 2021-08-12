@@ -1,4 +1,5 @@
 # ODrive
+**NOTE!! This library is fork of [johnkok/ros_odrive](https://github.com/johnkok/ros_odrive) library**
 
 Odrive controller library written in C++
 
